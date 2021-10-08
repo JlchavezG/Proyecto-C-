@@ -4,7 +4,7 @@ using namespace std;
 int main(){
     string user, pass, usuario = "Sistemas", password = "Admin01";
     char seguir, opc;
-    int multiplica, numero, i,;
+    int multiplica, numero, i;
     cout<<"Bienvenido por favor ingresa al sistema:\n";
     cout<<"Ingresa tu usuario: ";
     cin>>user;

@@ -2,7 +2,7 @@
 #include<stdio.h>
 using namespace std;
 string user, pass, user1 = "Sistemas", pass1 = "Admin01";
-char menu, seguir, opc;
+char menu, seguir, opc,opc1,opc2;
 int main(){
 cout<<"Bienvenido a la aplicacion por favor identificate \n";
 cout<<"Ingresa tu Usuario: ";
@@ -18,6 +18,7 @@ cin>>pass;
              cout<<"d) Juego de preguntas \n";
              cin>>menu;
                 if(menu == 'a'){
+                  do{  
                   int a,b,c,d, resp;
                   cout<<"Ingresa los numeros a sumar: \n";
                   cout<<"Numero 1: ";
@@ -30,9 +31,18 @@ cin>>pass;
                   cin>>d;
                   resp = a+b+c+d;
                   cout<<"La respuesta de la suma de los numeros: "<<a<<" + "<<b<<" + "<<c<<" + "<<d<<" = "<<resp<<endl;
+                  cout<<"¿Quieres jugar de nuevo?(s/n) ";
+                  cin>>opc1;
+                  }
+                  while(opc1!='n');
                  }
                  else if(menu == 'b'){
-                    cout<<"Juego de restas \n";
+                    do{
+                      cout<<"Juego de restas \n";
+                      cout<<"¿Quieres jugar de nuevo?(s/n) ";
+                      cin>>opc2; 
+                    }
+                    while(opc2!='n');
                  }
                  else if (menu == 'c') {
                     cout<<"Tablas de multiplicar \n"; 
