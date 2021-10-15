@@ -73,7 +73,10 @@ int main(){
     
                 }
                 else if(menu == 'd'){
-                    
+                    do{
+                      
+                    }
+                    while(opc5!= 'n')
                 }     
                 else{
                     cout<<"Opcion invalida ¿quieres regresar al menu(s/n)? \n";
